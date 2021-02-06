@@ -1,0 +1,51 @@
+html
+{background-color:#fafad2;
+font-family:"Times New Roman", Times, serif;} /*background colour and font for the whole site*/
+
+
+body
+{text-align:justify;
+font-size:large;} /*everything except headers h1/h2/h3 etc. if you need a specific paragraph to have another alignment, use <p align="center|left|right"></p> or use a span/div tag (scroll to the bottom of this doc)*/
+
+h1
+{color:green;
+text-align:center;
+text-decoration:underline;}
+
+h2
+{color:green;
+text-align:center;}
+
+h3
+{color:green;
+text-align:center;}
+
+h4
+{color:green;}
+
+a
+{color:limegreen;} /*links appear in this colour*/
+
+
+footer
+{color:green;
+text-align:center;
+font-style:italic;
+font-variant:small-caps;}
+
+
+/*Styles for span & div tags*/
+.navigation /*used for the navigation menu at the beginning of each page*/
+{color:green;
+text-align:center;}
+
+.disclaimer /*used for the disclaimer in the footer of each page*/
+{color:black;
+font-size:x-small;}
+
+.rosie /*used in span everywhere Rosie's name is!!*/
+{color:#e45c8b;}
+
+.pending /*for the list of names in Online Statement Form after "statement pending"*/
+{color:#ffffe0;
+font-style:italic;}
