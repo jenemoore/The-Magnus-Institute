@@ -16,6 +16,7 @@ h2
 {color:green;
 text-align:center;}
 
+
 h3
 {color:green;
 text-align:center;}
@@ -43,9 +44,11 @@ text-align:center;}
 {color:black;
 font-size:x-small;}
 
+
 .rosie /*used in span everywhere Rosie's name is!!*/
 {color:#e45c8b;}
 
 .pending /*for the list of names in Online Statement Form after "statement pending"*/
 {color:#ffffe0;
 font-style:italic;}
+
