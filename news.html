@@ -17,16 +17,68 @@
 <!-- web not wanted -->
 
 	<h1>News & Recent Events</h1>
+
+	
+<!--Code for spoiler buttons:
+
+<div id="spoilerNUMBER" style="display:none">HIDDEN CONTENT HERE</div>
+<a href="#NUMBER" title="Continue Reading" onclick="if(document.getElementById('spoilerNUMBER') .style.display=='none') {document.getElementById('spoilerNUMBER') .style.display=''}else{document.getElementById('spoilerNUMBER') .style.display='none'}">Continue reading...</a>
+
+MAKE SURE each ID is different -- all need to have different IDs -- and add the same number as id="NUMBER" in the <h4> heading-->
+	
+	<p>References to include:</p>
+	<ul>
+		<li>a band called Secondhand Softness</li>
+		<li>an undertaker named Beth Eyre</li>
+		<li>a police officer named Richard Davies</li>
+		<li>flavour name Mabel Syrup</li>
+		<li>the Quantum Leopard comedy club</li>
+		<li>a news event including a "snazzy tapir" and/or "the Prickwillow Papers"</li>
+
+	</ul>
+	
+
 	<h2>Institute News</h2>
 	
 		<table cellpadding="10" width="90%">
 			<tr>
 				<td align="right" width="20%">IMG</td>
-				<td><h4>Bring Your Child To Work Day</h4> <i>(Date)</i> Short description. <a href="">Continue reading...</a></td>
+
+				<td><h4 id="1">Bring Your Child To Work Day</h4> <i>(Date)</i> Short description. [Include a reference to Will Harvey (VA for Callum Brodie)
+				
+				<div id="spoiler1" style="display:none">More details about the article here</div>
+				
+				<a href="#1" title="Continue Reading" onclick="if(document.getElementById('spoiler1') .style.display=='none') {document.getElementById('spoiler1') .style.display=''}else{document.getElementById('spoiler1') .style.display='none'}">Continue reading...</a></td>
 			</tr>
+			
 			<tr>
 				<td align="right" width="20%">IMG</td>
-				<td><h4>Headline</h4> <i>(Date)</i> Short description. <a href="">Continue reading...</a></td>
+				<td><h4 id="2">Headline</h4> <i>(Date)</i> Short description.
+				
+				<div id="spoiler2" style="display:none">More details about the article here</div>
+				
+				<a href="#2" title="Continue Reading" onclick="if(document.getElementById('spoiler2') .style.display=='none') {document.getElementById('spoiler2') .style.display=''}else{document.getElementById('spoiler2') .style.display='none'}">Continue reading...</a></td>
+			</tr>
+			
+			<tr>
+				<td align="right" width="20%">IMG</td>
+				<td><h4 id="3">New Items in Artefact Storage</h4> <i>(Date)</i> [Ask Kahvi] Includes:
+				<br/>Kayaking Camel Plush with a reference to handler/caretaker/special assigned staff member Mike in there. And then at one point the name Mike is "accidentally" spelled Miek.
+				<br/>"A creepy music box in artefact storage, previous owner: Sam Jones"
+		
+				<div id="spoiler3" style="display:none">More details about the article here</div>
+				
+				<a href="#3" title="Continue Reading" onclick="if(document.getElementById('spoiler3') .style.display=='none') {document.getElementById('spoiler3') .style.display=''}else{document.getElementById('spoiler3') .style.display='none'}">Continue reading...</a></td>
+			</tr>
+			
+			<tr>
+				<td align="right" width="20%">IMG</td>
+				<td><h4 id="4">Headline</h4> <i>(Date)</i> Short description.
+				
+				<div id="spoiler4" style="display:none">More details about the article here</div>
+				
+				<a href="#4" title="Continue Reading" onclick="if(document.getElementById('spoiler4') .style.display=='none') {document.getElementById('spoiler4') .style.display=''}else{document.getElementById('spoiler4') .style.display='none'}">Continue reading...</a></td>
+
 			</tr>
 		</table>
 		
@@ -36,11 +88,28 @@
 	
 		<table cellpadding="10" width="90%">
 			<tr>
-				<td align="right"><h4>Disappearance In Bournemouth</h4> <i>([Month Day]th, 1996)</i> Short description. <a href="">Continue reading...</a></td>
+
+				<td align="right"><h4>Disappearance In Bournemouth</h4> <i>([Month Day]th, 1996)</i> Short description. [Include an English teacher named Sue Sims.]
+				
+				<a href="">Continue reading...</a></td>
 				<td width="20%">IMG</td>
 			</tr>
 			<tr>
-				<td align="right"><h4>Headline</h4> <i>(Date)</i> Short description. <a href="">Continue reading...</a></td>
+				<td align="right"><h4>Headline</h4> <i>(Date)</i> [Short blurb about a memory magician -- referencing Nicholas Carrick from Unseen, episode 7]				
+				<a href="">Continue reading...</a></td>
+				<td width="20%">IMG</td>
+			</tr>
+			<tr>
+				<td align="right"><h4>Title</h4> <i>(Date)</i> [Something about three supernatural chickens named Cecilia, Connie, and Sylvia. Desolation-themed.]</td>
+				<td width="20%">IMG</td>
+			</tr>
+			<tr>
+				<td align="right"><h4>Title</h4> <i>(Date)</i> Evelyn Lockley reporting an Eye-related weirdness.</td>
+				<td width="20%">IMG</td>
+			</tr>
+			<tr>
+				<td align="right"><h4>Title</h4> <i>(Date)</i> Jenny Haufek as a witness in a Spiral-like encounter.</td>
+
 				<td width="20%">IMG</td>
 			</tr>
 		</table>
@@ -54,7 +123,9 @@
 	<p>The Magnus Institute © 1996</p>
 	<hr/>
 	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/">Rusty Quill, Ltd</a>.
-	<br/><a href="credits.html">Link to credits page</a></div>
+
+	<br/><a href="credits.html">Link to credits page</a> | <a href="datapolicy.html">Data Collection Policy</a></div>
+
 <!-- spiders be gone -->
 </footer>
 

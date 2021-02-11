@@ -24,7 +24,6 @@ text-align:center;}
 h4
 {color:green;}
 
-
 a
 {color:limegreen;} /*links appear in this colour*/
 
@@ -44,3 +43,12 @@ text-align:center;}
 .disclaimer /*used for the disclaimer in the footer of each page*/
 {color:black;
 font-size:x-small;}
+
+
+.rosie /*used in span everywhere Rosie's name is!!*/
+{color:#e45c8b;}
+
+.pending /*for the list of names in Online Statement Form after "statement pending"*/
+{color:#ffffe0;
+font-style:italic;}
+
