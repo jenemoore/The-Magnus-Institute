@@ -3,5 +3,5 @@ ErrorDocument 404 /404.html
 #Protect Directory
 AuthName "Dialog prompt"
 AuthType Basic
-AuthUserFile /home/username/example.com/.htpasswd
+AuthUserFile /home/dh_ebdcdc/themagnusinstitute.org/.htpasswd
 Require valid-user
