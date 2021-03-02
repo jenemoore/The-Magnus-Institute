@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>404 — The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
+	
+	<link rel="StyleSheet" type="text/css" href="magnusinstitute.css">
+	<script language="javascript" type="text/javascript" src="scripts/404.js"></script>
+</head>
+
+<!--Cursor script -- use big owl in index page, mini owl in other pages-->
+<script type="text/javascript">
+/*
+Simple Image Trail script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact
+*/
+var trailimage=["images/cursor/miniowlcursor.gif", 40, 40] //image path, plus width and height
+var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+if (document.getElementById || document.all)
+document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function hidetrail(){
+gettrailobj().visibility="hidden"
+document.onmousemove=""
+}
+function followmouse(e){
+var xcoord=offsetfrommouse[0]
+var ycoord=offsetfrommouse[1]
+if (typeof e != "undefined"){
+xcoord+=e.pageX
+ycoord+=e.pageY
+}
+else if (typeof window.event !="undefined"){
+xcoord+=truebody().scrollLeft+event.clientX
+ycoord+=truebody().scrollTop+event.clientY
+}
+var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+gettrailobj().display="none"
+else 
+gettrailobj().display=""
+gettrailobj().left=xcoord+"px"
+gettrailobj().top=ycoord+"px"
+}
+document.onmousemove=followmouse
+if (displayduration>0)
+setTimeout("hidetrail()", displayduration*1000)
+</script>
+
+<body>
+	<div class="navigation">
+	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic Resources</a> | <a href="downloads.html">Downloads</a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html">Webring</a> || <a href="book.html">Guest Book</a> | <a href="contact.html">Contact</a></div>
+	<hr/>
+<!-- web not wanted -->
+
+	<h1>404 ~ TREMBLE IN FEAR ~ 404</h1>
+	<h2>The page could not be found.</h2>
+		
+		<p align="center">Don't worry, we're keeping an Eye on the situation.</p>
+		
+		[Insert a visual here]
+		<br/>[Insert progressively creepier Tessa Winters quotes (jj) - Tessa voiced by Fran Bushe]
+		
+		
+		
+	<div id="error1">
+		<center>
+		<p style="font-size:medium">🕸 a̤͇͗ͣn̥̘ͥ͆i̻̖̒͗k̦̞ͦ̑a̩̗͊̈ ̱̠̓̓k̫̰̇̚h̯̬ͧͪa͙̤͋̐n̥̻ͥ̋.͈̻ͩ́ ̃ h͔̜ͧ͑ǐ̙͚̆ ̰͇̹̝͆̇̉n̰̝ͨ̔i̥̪͂ͪc̱̰̋̔e͖ͫ̊ͅ ̝̺͒ͧa̹͖ͯ̔r̼̙̀͐t̟̩ͯ̐ ::::) 🕸</p>
+		
+		<img src="images/MagnusLogoAnikaKhan.webp" alt="The logo for the Magnus Archives, season 5. It is an audio tape made of spiderwebs, stylised." height="200px"/>
+		</center>
+	</div>
+
+	<div id="error2">
+		<p>[Message referencing Tessa Winters's VA, Fran Bushe]</p>
+	</div>
+
+	<div id="error3">
+		<p>Error message 3</p>
+	</div>
+
+	<div id="error4">
+		<p>Error message 4</p>
+	</div>		
+		
+		
+		
+		
+		
+	
+<!-- no seriously, we can see you, stop that! -->
+</body>
+
+<footer>
+	<p>~~~~~~~~~~~~~~</p> <!-- 14 tildes -->
+	<p>The Magnus Institute © 1996</p>
+	<hr/>
+	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/" target="_blank">Rusty Quill, Ltd</a>.
+	<br/><a href="credits.html">Link to credits page</a> | <a href="datapolicy.html">Data Collection Policy</a></div>
+<!-- spiders be gone -->
+</footer>
+
+</html>

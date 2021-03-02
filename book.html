@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Guest Book — The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
+	
+	<link rel="StyleSheet" type="text/css" href="magnusinstitute.css">
+</head>
+
+<!--Cursor script -- use big owl in index page, mini owl in other pages-->
+<script type="text/javascript">
+/*
+Simple Image Trail script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact
+*/
+var trailimage=["images/cursor/miniowlcursor.gif", 40, 40] //image path, plus width and height
+var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+if (document.getElementById || document.all)
+document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function hidetrail(){
+gettrailobj().visibility="hidden"
+document.onmousemove=""
+}
+function followmouse(e){
+var xcoord=offsetfrommouse[0]
+var ycoord=offsetfrommouse[1]
+if (typeof e != "undefined"){
+xcoord+=e.pageX
+ycoord+=e.pageY
+}
+else if (typeof window.event !="undefined"){
+xcoord+=truebody().scrollLeft+event.clientX
+ycoord+=truebody().scrollTop+event.clientY
+}
+var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+gettrailobj().display="none"
+else 
+gettrailobj().display=""
+gettrailobj().left=xcoord+"px"
+gettrailobj().top=ycoord+"px"
+}
+document.onmousemove=followmouse
+if (displayduration>0)
+setTimeout("hidetrail()", displayduration*1000)
+</script>
+
+<body>
+	<div class="navigation">
+	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic Resources</a> | <a href="downloads.html">Downloads</a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html">Webring</a> || <a href="book.html"><b>Guest Book</b></a> | <a href="contact.html">Contact</a></div>
+	<hr/>
+<!-- web not wanted -->
+
+	<h1>Guest Book</h1>
+	
+	<p>Welcome to the Magnus Institute's virtual guest book!</p>
+	
+	<h2>Leave Us a Message</h2>
+	
+	<p><i>Please note that this is a virtual public guest book for the Magnus Institute. All statements related to your personal encounters with the supernatural should be entered in the form available on <a href="statement.html">this page</a>. All messages intended to be private communication (regarding e.g. research, funding applications, or technical issues) should be submitted via our <a href="contact.html">contact form</a>.</i></p>
+		
+	<form action="/handlingform" id="statementform">
+		<label for="fname"><b>First name:</b></label> <input type="text" id="fname" name="fname" required>
+		| <label for="fname"><b>Last name:</b></label> <input type="text" id="lname" name="lname" required>
+		| <label for="email"><b>E-mail address:</b></label> <input type="email" id="email" name="email">
+		<br/>
+		<br/>
+		
+		<textarea name="testimonial" rows="10" cols="100" required>Type your message here...</textarea>
+		<br/>
+		
+		<input type="submit" value="Submit">
+	</form>
+	
+	<h2>Past Visitor Messages</h2>
+	
+	[syntax and appearance TBD]
+	[This is where the fake Alex application for funding for Rusty Quill should go -- “something that from the description would be recognisable as funding from Rusty Quill” / “needs money for new duvets after the old ones got covered in asbestos, and a new disco bulb after the cat got it” / “funds for starting up a company to produce cosmic horror and foot-based scifi improv comedy, with special focus on including as many people named Sasha and Mike as possible, and people who can write very useful stage directions like "It's all a bit much."”]
+	
+<!-- no seriously, we can see you, stop that! -->
+</body>
+
+<footer>
+	<p>~~~~~~~~~~~~~~</p> <!-- 14 tildes -->
+	<p>The Magnus Institute © 1996</p>
+	<hr/>
+	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/" target="_blank">Rusty Quill, Ltd</a>.
+	<br/><a href="credits.html">Link to credits page</a> | <a href="datapolicy.html">Data Collection Policy</a></div>
+<!-- spiders be gone -->
+</footer>
+
+</html>
