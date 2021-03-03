@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Staff — The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
+	
+	<style type="text/css">
+		tr{text-align:left; vertical-align:top;}
+	</style>
+	
+	<link rel="StyleSheet" type="text/css" href="magnusinstitute.css">
+</head>
+
+<!--Cursor script -- use big owl in index page, mini owl in other pages-->
+<script type="text/javascript">
+/*
+Simple Image Trail script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact
+*/
+var trailimage=["images/cursor/miniowlcursor.gif", 40, 40] //image path, plus width and height
+var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+if (document.getElementById || document.all)
+document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function hidetrail(){
+gettrailobj().visibility="hidden"
+document.onmousemove=""
+}
+function followmouse(e){
+var xcoord=offsetfrommouse[0]
+var ycoord=offsetfrommouse[1]
+if (typeof e != "undefined"){
+xcoord+=e.pageX
+ycoord+=e.pageY
+}
+else if (typeof window.event !="undefined"){
+xcoord+=truebody().scrollLeft+event.clientX
+ycoord+=truebody().scrollTop+event.clientY
+}
+var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+gettrailobj().display="none"
+else 
+gettrailobj().display=""
+gettrailobj().left=xcoord+"px"
+gettrailobj().top=ycoord+"px"
+}
+document.onmousemove=followmouse
+if (displayduration>0)
+setTimeout("hidetrail()", displayduration*1000)
+</script>
+
+<body>
+	<div class="navigation">
+	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic Resources</a> | <a href="downloads.html">Downloads</a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html"><b>Staff</b></a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html">Webring</a> || <a href="book.html">Guest Book</a> | <a href="contact.html">Contact</a></div>
+	<hr/>
+<!-- web not wanted -->
+
+	<h1>Current Staff</h1>
+	<h2>Our esteemed Head of Institute</h2>
+	<h3>Elias Bouchard</h3>
+	<center>IMG</center>
+	<p>[Insert biography of Elias Bouchard, newly minted Head of the Magnus Institute, etc.]</p>
+
+	<br/>
+
+<!--Administration-->
+
+	<h2 style="border-bottom:1px dashed">Admin</h2>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed;">
+		<tr>
+			<td><img src="images/staff/rosie_zampano.jpg" alt="Photo of an Italian woman in her 30s." height="100px"/></td>
+			<td class="antborder"><br/><br/><img src="images/cliparts/admin.png" alt="A clipart of a quill and open inkwell." height="50px"/></td>
+		</tr>
+		<tr>
+			<th><span class="rosie">Rosie Zampano</span></th>
+			<th class="antborder">Nora Raymond</th>
+		</tr>
+		<tr>
+			<td>Head Secretary, Webmistress.
+				<br/><i>Mr. Bouchard likes his coffee lukewarm. It's a latte without expresso, which is just water with cream on top, and it's weird, but I get it.</i></td>
+			<td class="antborder">Administrative Assistant.
+				<br/><i>bio</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+		
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed;">
+		<tr>
+			<td><img src="images/cliparts/accounting.png" alt="A clipart of a few pound sterling bills and coins." height="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/accounting.png" alt="A clipart of a few pound sterling bills and coins." height="50px"/></td>
+		</tr>
+		<tr>
+			<th>John Blake</th>
+			<th class="antborder">Leopold Murray</th>
+		</tr>
+		<tr>
+			<td>Head Accountant.
+				<br/><i>Show me the money!</i></td>
+			<td class="antborder">Payroll and Benefits Administrator.
+				<br/><i>He can't make payday come any faster, but ask him about his fishing skills!</i></td>
+		</tr>
+		
+	</table>
+	
+	<br/>
+		
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/hr.png" alt="A highly stylised clipart depicting three people." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/hr.png" alt="A highly stylised clipart depicting three people." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Sharon Johnson</th>
+			<th class="antborder">Laura Randall</th>
+		</tr>
+		<tr>
+			<td>Chief of Staff.
+				<br/><i>Please, keep sending in applications, we're constantly in need.</i></td>
+			<td class="antborder">Member and Visitor Services Coordinator.
+				<br/><i>bio</i></td>
+		</tr>
+		
+	</table>
+	
+	<br/>
+		
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/legal.png" alt="A clipart of a courthouse." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/legal.png" alt="A clipart of a courthouse." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Marguerite Kenner</th>
+			<th class="antborder">Michelle Williams</th>
+		</tr>
+		<tr>
+			<td>Legal Expert.
+				<br/><i>Exceptionally proud of her sourdough starter.</i></td>
+			<td class="antborder">Legal Assistant.
+				<br/><i>Legally there is nothing I can actually say.</i></td>
+		</tr>
+		
+	</table>
+
+	<br/>
+
+<!--IT-->
+
+	<h2 style="border-bottom:1px dashed">IT</h2>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/it.png" alt="A clipart of a computer tower with its square monitor and a keyboard." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/it.png" alt="A clipart of a computer tower with its square monitor and a keyboard." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Stephen Jones</th>
+			<th class="antborder">Mark Lewis</th>
+		</tr>
+		<tr>
+			<td>IT Systems Administrator.
+				<br/><i>I can see all your top scores on Minesweeper. Not even close.</i></td>
+			<td class="antborder">Help Desk Technician.
+				<br/><i>The Internet is not trying to give you free money. Please stop opening the emails.</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+
+
+<!--Library-->
+	
+	<h2 style="border-bottom:1px dashed">Library</h2>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/staff/diana_cohen.jpg" alt="Photo of a middle-aged Asian woman with glasses. Her grey hair is cut very short." height="100px"/></td>
+			<td class="antborder"><br/><br/><br/><img src="images/cliparts/library.png" alt="A clipart representing an open book." width="50px"/></td>
+			<td class="antborder"><br/><br/><br/><img src="images/cliparts/library.png" alt="A clipart representing an open book." width="50px"/></td>
+		</tr>
+		<tr>
+			<th>Diana Cohen</th>
+			<th class="antborder">Georgina Roe</th>
+			<th class="antborder">Pamela Shaw</th>
+		</tr>
+		<tr>
+			<td>Head Librarian.
+				<br/><i>bio</i></td>
+			<td class="antborder">Acquisitions Librarian.
+				<br/><i>bio</i></td>
+			<td class="antborder">Reference Librarian.
+				<br/><i>bio</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/library.png" alt="A clipart representing an open book." width="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/library.png" alt="A clipart representing an open book." width="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/library.png" alt="A clipart representing an open book." width="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/library.png" alt="A clipart representing an open book." width="50px"/></td>
+		</tr>
+		<tr>
+			<th>Paul Sims</th>
+			<th class="antborder">Tom Rawlins</th>
+			<th class="antborder">Matthew Collins</th>
+			<th class="antborder">Annie Nixon</th>
+		</tr>
+		<tr>
+			<td>Curator of Rare Books, Head of Special Collections.
+				<br/><i>Definitely a better person than Jurgen Leitner.</i></td>
+			<td class="antborder">Special Collections Registrar.
+				<br/><i>bio</i></td>
+			<td class="antborder">Assistant Curator.
+				<br/><i>bio</i></td>
+			<td class="antborder">Collections and Exhibitions Technician.
+				<br/><i>No relation.</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/library.png" alt="A clipart representing an open book." width="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/library.png" alt="A clipart representing an open book." width="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/library.png" alt="A clipart representing an open book." width="50px"/></td>
+		</tr>
+		<tr>
+			<th>Ciaran Roberts</th>
+			<th class="antborder">Imogen Harris</th>
+			<th class="antborder">Mark Coulson</th>
+		</tr>
+		<tr>
+			<td>Rare Materials Catalog Librarian.
+				<br/><i>bio</i></td>
+			<td class="antborder">Old Materials Catalog Librarian.
+				<br/><i>Are there plesiosaurs in the Institute library? Maybe!</i></td>
+			<td class="antborder">Cataloging Assistant.
+				<br/><i>bio</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+
+<!--Research-->
+	
+	<h2 style="border-bottom:1px dashed">Research</h2>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/staff/generic_white_man.jpg" alt="Generic photo of a white man in a suit. He looks... off, somehow." height="100px"/></td>
+			<td class="antborder"><br/><br/><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>David Smith</th>
+			<th class="antborder">Deborah Taylor</th>
+		</tr>
+		<tr>
+			<td>Head of Research.
+				<br/><i>Expert in all things strange and stranger.</i></td>
+			<td class="antborder">Statement Veracity Coordinator.
+				<br/><i>bio</i></td>
+		</tr>
+	</table>
+	
+	
+	<!--TEAM 1-->
+	
+	<h3 style="border-bottom:1px dashed">Paranormal Encounters</h3>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/researchper.png" alt="A clipart of a cartoon ghost." width="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Andrew Wood</th>
+			<th class="antborder">Michaelus Alter</th>
+			<th class="antborder">Ivan Boots</th>
+			<th class="antborder">Linda Evans</th>
+		</tr>
+		<tr>
+			<td>PER Team Coordinator.
+				<br/><i>The original team player (read: coordinator.)</i></td>
+			<td class="antborder">PER Historian.
+				<br/><i>A perfectly normal name.</i></td>
+			<td class="antborder">PER Equipment Specialist.
+				<br/><i>bio</i></td>
+			<td class="antborder">Paranormal Field Researcher.
+				<br/><i>Spooky is her line of work.</i></td>
+		</tr>
+	</table>
+
+<!--TEAM 2-->
+	
+	<h3 style="border-bottom:1px dashed">Historical Research</h3>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/researchhistorical.png" alt="A clipart of a piece of parchment." height="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Mike McMahon</th>
+			<th class="antborder">Timothy Blake</th>
+			<th class="antborder">Henry Jones</th>
+		</tr>
+		<tr>
+			<td>Historical Research Coordinator.
+				<br/><i>bio</i></td>
+			<td class="antborder">Architectural Historian.
+				<br/><i>No, I do not know why London Bridge is falling down. Stop asking.</i></td>
+			<td class="antborder">Archaeologist.
+				<br/><i>His service dog is not called Indiana but he is a very good boy.</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Matilda Miller</th>
+			<th class="antborder">Margaret Brown</th>
+			<th class="antborder">Vincent Malloy</th>
+		</tr>
+		<tr>
+			<td>Historical Maps Analyst.
+				<br/><i>bio</i></td>
+			<td class="antborder">Genealogist Researcher.
+				<br/><i>bio</i></td>
+			<td class="antborder">Historical Research Assistant.
+				<br/><i>He's always polite and does what he's told.</i></td>
+		</tr>
+	</table>
+
+<!--TEAM 3-->
+	
+	<h3 style="border-bottom:1px dashed">Locations</h3>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/researchlocations.png" alt="A clipart of a map." height="60px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Jane Walker</th>
+			<th class="antborder">Gary Liberman</th>
+		</tr>
+		<tr>
+			<td>Locations Research Coordinator.
+				<br/><i>bio</i></td>
+			<td class="antborder">Foreign Locations Referent.
+				<br/><i>Emails asking if I can book a holiday to Alicante will be treated as a breach of company policy.</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Asif Aziz</th>
+			<th class="antborder">Mikhail Belinsky</th>
+			<th class="antborder">Ian Evans</th>
+		</tr>
+		<tr>
+			<td>Anthropologist.
+				<br/><i>No, it's  not the study of bones. Well, it can be... but it's not.</i></td>
+			<td class="antborder">Maps Analyst.
+				<br/><i>I've been to the edge of the map... here be monsters.</i></td>
+			<td class="antborder">Field Researcher.
+				<br/><i>I don't  actually research fields. Stop sending me holiday pictures of fields.</i></td>
+		</tr>
+	</table>
+
+<!--TEAM 5-->
+	
+	<h3 style="border-bottom:1px dashed">Ownerships & Authentication</h3>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/researcho-a.png" alt="A clipart of a wallet." height="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Christopher Thomas</th>
+			<th class="antborder">Susan Hughes</th>
+			<th class="antborder">Smyra Bilal</th>
+		</tr>
+		<tr>
+			<td>O&A Team Coordinator.
+				<br/><i>42. Hans shot first. Acme diapering re appearing ink. 2nd shooter on the grassy knoll. Stop asking</i></td>
+			<td class="antborder">Documentation Authentication Specialist.
+				<br/><i>Elias sends me your forged doctor's notes once a month. You loop the y! It's a dead giveaway!</i></td>
+			<td class="antborder">Art Authentication Specialist.
+				<br/><i>No I haven't been on Antiques Roadshow.</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>Julian Doherty</th>
+			<th class="antborder">Sharon White</th>
+		</tr>
+		<tr>
+			<td>Authentication Assistant.
+				<br/><i>IT'S REAL!</i></td>
+			<td class="antborder">Authentication Assistant.
+				<br/><i>I checked.</i></td>
+		</tr>
+	</table>	
+
+
+<!--TEAM 4-->
+	
+	<h3 style="border-bottom:1px dashed">Conservation</h3>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/researchconservation.png" alt="A clipart of a paintbrush with red paint on it." height="48px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+			<td class="antborder"><img src="images/cliparts/research.png" alt="A clipart of a magnifying glass." height="40px"/></td>
+		</tr>
+		<tr>
+			<th>James Thompson</th>
+			<th class="antborder">Joshua Baumgartner</th>
+			<th class="antborder">Morgan York</th>
+			<th class="antborder">Alice Travelion</th>
+		</tr>
+		<tr>
+			<td>Conservation Team Coordinator.
+				<br/><i>bio</i></td>
+			<td class="antborder">Art Conservator.
+				<br/><i>Is it reversible? It should be.</i></td>
+			<td class="antborder">Book Conservator.
+				<br/><i>Prefers to work on books in languages they can't read.</i></td>
+			<td class="antborder">Paper Conservator.
+				<br/><i>Absolutely we should save trees, but she will fix these papers in the meantime!</i></td>
+		</tr>
+	</table>
+
+	
+	</br>
+
+
+
+
+
+<!--Artefact Storage-->
+	
+	<h2 style="border-bottom:1px dashed">Artefact Storage</h2>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/staff/sonja_soelberg.jpeg" alt="Photo of a white woman in her 30s with long red hair." height="100px"/></td>	
+			<td class="antborder"><br/><br/><img src="images/cliparts/storage.png" alt="A clipart of a storage box." height="50px"/></td>
+			<td class="antborder"><br/><br/><img src="images/cliparts/storage.png" alt="A clipart of a storage box." height="50px"/></td>
+		</tr>
+		<tr>
+			<th>Sonja Soelberg</th>
+			<th class="antborder">Paula Salkeld</th>
+			<th class="antborder">Antonio Harrison</th>
+		</tr>
+		<tr>
+			<td>Head of Artefact Storage.
+				<br/><i>Danger is my first, last, and middle name.</i></td>
+			<td class="antborder">Artefact Curator.
+				<br/><i>Put that thing back where it came from ... or so help me...</i></td>
+			<td class="antborder">Artefact Preservation Specialist.
+				<br/><i>'Do not touch' is a rule, not a guideline.</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/storage.png" alt="A clipart of a storage box." height="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/storage.png" alt="A clipart of a storage box." height="50px"/></td>
+		</tr>
+		<tr>
+			<th>Simon Harris</th>
+			<th class="antborder">Helen Gould</th>
+		</tr>
+		<tr>
+			<td>Hazardous Books Referent.
+				<br/><i>Sometimes you can, and should, judge books by their covers.</i></td>
+			<td class="antborder">Hazardous Art & Documents Referent.
+				<br/><i>The 'best Rusty Quiller', whatever that means.</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/cliparts/storage.png" alt="A clipart of a storage box." height="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/storage.png" alt="A clipart of a storage box." height="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/storage.png" alt="A clipart of a storage box." height="50px"/></td>
+			<td class="antborder"><img src="images/cliparts/storage.png" alt="A clipart of a storage box." height="50px"/></td>
+		</tr>
+		<tr>
+			<th>Julie Lewis</th>
+			<th class="antborder">Michael O'Donnell</th>
+			<th class="antborder">Zachary Tyler</th>
+			<th class="antborder">Francis Davison</th>
+		</tr>
+		<tr>
+			<td>Artefact Testing Coordinator.
+				<br/><i>Please stop suggesting strange things to try, we have enough...</i></td>
+			<td class="antborder">Storage Assistant.
+				<br/><i>Another one?!</i></td>
+			<td class="antborder">Storage Assistant.
+				<br/><i>Not entirely sure what he's doing here.</i></td>
+			<td class="antborder">Storage Assistant.
+				<br/><i>The one, the only... also the only one who knows what they're doing.</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+
+
+
+<!--Archives-->
+	
+	<h2 style="border-bottom:1px dashed">Archives</h2>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/staff/gertrude_robinson.jpeg" alt="Photo of a middle-aged white woman. Her greying hair is cut just above her shoulders." height="100px"/></td>
+			<td class="antborder"><br/><img src="images/cliparts/archives.png" alt="A clipart of a document tray, with one of the drawers open." height="60px"/></td>
+			<td class="antborder"><br/><img src="images/cliparts/archives.png" alt="A clipart of a document tray, with one of the drawers open." height="60px"/></td>
+			<td class="antborder"><br/><img src="images/cliparts/archives.png" alt="A clipart of a document tray, with one of the drawers open." height="60px"/></td>
+		</tr>
+		<tr>
+			<th>Gertrude Robinson</th>
+			<th class="antborder">Emma Harvey</th>
+			<th class="antborder">Michael Shelley</th>
+			<th class="antborder">Sarah Carpenter</th>
+		</tr>
+		<tr>
+			<td>Head Archivist.
+				<br/><i>bio</i></td>
+			<td class="antborder">Archival Assistant.
+				<br/><i>bio</i></td>
+			<td class="antborder">Archival Assistant.
+				<br/><i>bio</i></td>
+			<td class="antborder">Archival Assistant.
+				<br/><i>bio</i></td>
+		</tr>
+	</table>
+	
+	<br/>
+
+
+
+
+<!--Other Staff-->
+
+	<h2 style="border-bottom:1px dashed">Facilities</h2>
+	
+	<table width="100%" style="table-layout:fixed; border-bottom:1px dashed">
+		<tr>
+			<td><img src="images/staff/richard_martin.jpg" alt="Photo of a middle-aged white man with glasses and grey hair." height="100px"/></td>
+			<td class="antborder"><br/><br/><img src="images/cliparts/facilities.png" alt="A clipart of a wrench and hammer." height="50px"/></td>
+			<td class="antborder"><br/><br/><img src="images/cliparts/facilities.png" alt="A clipart of a wrench and hammer." height="50px"/></td>
+			<td class="antborder"><br/><br/><img src="images/cliparts/facilities.png" alt="A clipart of a wrench and hammer." height="50px"/></td>
+		</tr>
+		<tr>
+			<th>Richard Martin</th>
+			<th class="antborder">Terrance Bumble</th>
+			<th class="antborder">Steven Violich</th>
+			<th class="antborder">Martin Corcoran</th>
+		</tr>
+		<tr>
+			<td>Head of Facilities & Security.
+				<br/><i>All of my funny anecdotes would get anywhere else investigated.</i></td>
+			<td class="antborder">Building Caretaker.
+				<br/><i>There must be a way to take one of life's few remaining pleasures out of your daily routine!</i></td>
+			<td class="antborder">Building Custodian.
+				<br/><i>I'm gonna get a bottle of Head & Shoulders, 'cause I found one on the road the other day.</i></td>
+			<td class="antborder">Building Custodian.
+				<br/><i>We do pick up odd roadkill, don't we? But a man's got to eat.</i></td>
+		</tr>
+	</table>
+
+
+	
+<!-- no seriously, we can see you, stop that! -->
+</body>
+
+<footer>
+	<p>The Magnus Institute © 1996</p>
+	<hr/>
+	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/" target="_blank">Rusty Quill, Ltd</a>.
+	<br/><a href="credits.html">Link to credits page</a> | <a href="datapolicy.html">Data Collection Policy</a></div>
+<!-- spiders be gone -->
+</footer>
+
+</html>
