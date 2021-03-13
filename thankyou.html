@@ -146,13 +146,24 @@ setTimeout("hidetrail()", displayduration*1000)
 	
 	<tr>
 		<td>	
-			<h3>[Project Shadow London]</h3>
-			<p>End: “The moment you die will feel just the same as this one” // (the reference to "Project Shadow London" is for Russell Smith (Oliver Banks VA))</p>
+			<h3>Project Shadow London</h3>
+			<center><img style="cursor:pointer" src="images/ads/end.png" alt="A set of two ad banners. Which image is displayed changes on click. Both banners show black swirly veins on a white background, with an hourglass on either side of the text. The text on the first banner reads, Project Shadow London, The moment that you die will feel exactly the same as this one. The text on the second banner reads, The moment that you die will feel exactly the same as this one. Do not contact us for details." width="400px" height="100px" id="getImage" onclick="changeImage()"/></center>
+			<script language="javascript">
+				function changeImage() {
+					var Image_Id = document.getElementById('getImage');
+					if (Image_Id.src.match("images/ads/end.png")) {
+						Image_Id.src = "images/ads/end_noshadow.png";
+					}
+					else {
+						Image_Id.src = "images/ads/end.png";
+						}
+					}
+			</script>
 		</td>
 	
 		<td>
 			<h3>Rusty Quill Ltd.</h3>
-			<center>[add link to MacDeath's Chelicerae]<a href="[CHELICERAE]" target="_blank"><img style="cursor:pointer" src="images/ads/web.png" alt="Ad banner of a bright blue sky saying, Are you the Web Developer of The Future? Hiring now! in black text. To the left of the text is an old-style square computer monitor placed on a spiderweb, and to the right of the text is a smiling, winking, balding business person pointing at the viewer with one finger." width="400px" height="100px"></a></center>
+			<center><a href="https://7b0f467a717966ea08a94ccancsa40il73ffc6d1d5c.ee" target="_blank"><img style="cursor:pointer" src="images/ads/web.png" alt="Ad banner of a bright blue sky saying, Are you the Web Developer of The Future? Hiring now! in black text. To the left of the text is an old-style square computer monitor placed on a spiderweb, and to the right of the text is a smiling, winking, balding business person pointing at the viewer with one finger." width="400px" height="100px"></a></center>
 		</td>
 			
 	</tr>
