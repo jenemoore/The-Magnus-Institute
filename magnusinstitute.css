@@ -1,13 +1,11 @@
 html
 {background-color:#fafad2;
-
 font-family:"Times New Roman", Times, serif;}
 /*cursor:url('images/cursor/miniowlcursor1.png'), auto;} /*background colour and font for the whole site*/
 
 body
 {text-align:justify;
 font-size:large;} /*text: for everything except headers h1/h2/h3 etc. if you need a specific paragraph to have another alignment, use <p align="center|left|right"></p> or use a span/div tag (scroll to the bottom of this doc)*/
-
 
 h1
 {color:green;
@@ -28,9 +26,9 @@ h4
 a
 {color:limegreen;} /*links appear in this colour*/
 
-
 a[target="_blank"]:after
 {content: " " url(images/cliparts/external.png);}
+
 
 footer
 {color:green;
@@ -48,14 +46,12 @@ text-align:center;}
 {color:black;
 font-size:x-small;}
 
-
 .rosie /*used in span everywhere Rosie's name is!!*/
 {color:#e45c8b;}
 
 .pending /*for the list of names in Online Statement Form after "statement pending"*/
 {color:#ffffe0;
 font-style:italic;}
-
 
 .tilde /*for the credits page*/
 {color:green;}
@@ -67,10 +63,14 @@ font-style:italic;}
 {border-left:1px dotted;
 padding-left:5px;}
 
+.guestbook /*to align paragraphs to the left in the guest book page*/
+{text-align:left;
+margin-top: 1em;
+margin-bottom: 1em;}
+
 
 /*Styles for JavaScript fun stuff*/
 .dark /*Puts the page in dark mode when you click on the Dark ad in the thank you page*/
 {background-color:black;
 color:white;
 margin:0;}
-
