@@ -5,52 +5,150 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
-	<title>The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
+	<title>Downloads — The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
 	
 	<link rel="StyleSheet" type="text/css" href="magnusinstitute.css">
 </head>
 
+<!--Cursor script -- use big owl in index page, mini owl in other pages-->
+<script type="text/javascript">
+/*
+Simple Image Trail script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact
+*/
+var trailimage=["images/cursor/miniowlcursor.gif", 40, 40] //image path, plus width and height
+var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+if (document.getElementById || document.all)
+document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function hidetrail(){
+gettrailobj().visibility="hidden"
+document.onmousemove=""
+}
+function followmouse(e){
+var xcoord=offsetfrommouse[0]
+var ycoord=offsetfrommouse[1]
+if (typeof e != "undefined"){
+xcoord+=e.pageX
+ycoord+=e.pageY
+}
+else if (typeof window.event !="undefined"){
+xcoord+=truebody().scrollLeft+event.clientX
+ycoord+=truebody().scrollTop+event.clientY
+}
+var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+gettrailobj().display="none"
+else 
+gettrailobj().display=""
+gettrailobj().left=xcoord+"px"
+gettrailobj().top=ycoord+"px"
+}
+document.onmousemove=followmouse
+if (displayduration>0)
+setTimeout("hidetrail()", displayduration*1000)
+</script>
+
 <body>
 	<div class="navigation">
-	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic resources</a> | <a href="downloads.html"><b>Downloads</b></a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html">Webring</a> || <a href="book.html">Guest Book</a> | <a href="contact.html">Contact</a></div>
+	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic Resources</a> | <a href="downloads.html"><b>Downloads</b></a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html">Webring</a> || <a href="book.html">Guest Book</a> | <a href="contact.html">Contact</a></div>
 	<hr/>
 <!-- web not wanted -->
 
 	<h1>Downloads</h1>
 	
 	<h2>Sample statements</h2>
-
-		<p>[find a few of the old-timey statements that Gertrude read; make them available as (a zip of?) .txt files // include Easter eggs here]</p>
+		<p>You will find below four statements from our Archives, to showcase the sort of encounters our Institute records and researches.</p>
 		
-		<p>Elizabeth Moffat (editor): "She joined our team after tracking down our offices, apparently to provide a statement about a spectral figure in Gunnersbury Triangle." (from the Rusty Quill about page)</p>
+		<p style="font-size:small"><i>Please note that, though these four people have graciously allowed us to showcase their statements on our website, our statements are not usually accessible to the general public, as we aim to ensure the anonymity of our statement givers.
+		<br/>If you are a researcher or other member of an academic institution and you would like to access one of our statements, please contact us at <a href="mailto:mail@themagnusinstitute.org">mail@themagnusinstitute.org</a>.</i></p>
 		
-		<p>Evelyn Hewitt (voice of Not!Sasha): "One summer I was given the summer job of painting an atrium at a large countryside hotel. [...] at night I was allowed to stay in the hotel [...] I found a secret corridor, behind a bookshelf [...]but when I found the accounts boxes hidden away in the secret cupboard, I realised it was just a storage cupboard" (from the Cast Retrospective)</p>
+		<p><b>1.</b> Regarding a spectral figure in Gunnersbury Triangle, London. <a href="downloads/statement1_EM.txt" target="_blank">Download statement...</a>
+		<br><i>In retrospect I figure I must have fallen asleep, but that’s not what it felt like at all. There was no slow drifting away, there was no drowsy awakening, all I know is that it was bright daylight and then it was pitch black.</i></p>
 		
-		<p>Fay Roberts (voice of Daisy): "basically I had a series of zombie apocalypse nightmares, from the year 2000 up to the year 2016, whereupon they stopped – make of that what you will." (From the Cast Retrospective)</p>
+		<p><b>2.</b> Regarding frequent sensations of falling. <a href="downloads/statement2_EH.txt" target="_blank">Download statement...</a>
+		<br><i>I felt a slight shift, something that should have been impossible given that the shelf was supposedly attached to the wall, and then a nearly imperceptible breeze. Suddenly my body slipped and I was falling, like being pushed over a balcony I hadn't known was there.</i></p>
 		
-		<p>Lottie Broomhall (voice of Sasha): something about screaming under a blanket at 4am and the neighbours completely ignoring what's happening (RQ lore/Rusty Bits)</p>
+		<p><b>3.</b> Regarding a series of zombie apocalypse nightmares. <a href="downloads/statement3_FR.txt" target="_blank">Download statement...</a>
+		<br><i>[PLACEHOLDER TEXT]</i></p>
+		
+		<p><b>4.</b> Regarding the role of blankets in a mysteriously foggy encounter. <a href="downloads/statement4_LB.txt" target="_blank">Download statement...</a>
+		<br><i>I am here because, well, the blanket did something. </i>My<i> blanket did something, anyway. Or, maybe it wasn’t actually the blanket, but something else. It helps me feel better if I ascribe blame to the blanket, though, because if it wasn’t the blanket, I think I’m in big trouble.</i></p>
 		
 		
-		
+<hr style="border-bottom: dotted 2px; border-top:none; color:green;" />
 		
 	
-	<h2>Magnus Clippy for Microsoft Word [insert version]</h2>
-		<p>["secretly an archival assistant or other hypnotised by the Eye into transcription services -- like mechanical Turk for the late 20th century"
-		<br/>"Virtual assistant for Microsoft Word whichever-version-was-in-use-in-96 with fake clippy art (and download link which will be broken <a href="/downloads/LCM.zip">Download Little Clone Magnus</a>), Named in honour of our illustrious founder Jonah Magnus. Your personal digital eyesistant.
-		<br/>"I <b>see</b> you're working on an expense report, [name]. Can I help?"
-		<br/>Design: [a screenshot including this ^ line of text] A tape recorder or cassette tape or loop of audio tape in the shape of Clippy, with the Clippy-style grey googly eyes and Ben Meredith's mustache
-		]</p>
+	<h2>Little Clone Magnus:
+	<br/>A virtual assistant for Microsoft Office 96</h2> <!--Yes, it came out a year earlier in the TMA universe than it did in ours, because the virtual assistant joke doesn't work otherwise!-->
+		
+		<p align="center">
+		<img src="images/lcm/animate.gif" style="border:solid; border-width:1px; border-color:limegreen;" alt="A gif animation of Little Clone Magnus, a virtual assistant for Microsoft Office 96. Little Clone Magnus is a cassette tape with googly eyes and a mustache in the same style as Ben Meredith's. The gif shows the Animate function of Little Clone Magnus, in which it jumps and spins around before coming back down."/>
+		<br/><i>Complete with custom animations.</i>
+		</p>
+		
+		<p>Named in honour of our illustrious founder <span title="Jimmy Magma">Jonah Magnus</span>, <b>Little Clone Magnus</b> is a custom virtual assistant for Microsoft Office 96, made with the work of the parascientific researcher in mind. It comes with several features designed to help you navigate the more unusual parts of your work:</p>
+		
+		<ul>
+			<li><i>5 additional "tips of the day"</i> to help you start every weekday on the best foot;</li>
+			<li><i>40 additional dialogue options and contextual menus</i> to provide you with the most comprehensive help possible and an experience smoother than guzzling moisturiser;</li>
+			<li><i>15 different animations</i> you can admire when unable to leave your office;</li>
+			<li>And of course, <i>1 fantastic mustache</i>, which has been scientifically proven to enhance your ability to close your eyes when it gets dark at night.</li>
+		</ul>
+		
+		<p>All of these occult-proof features will make <b>Little Clone Magnus</b> the best personal digital eyesistant you could ask for.</p>
+		
+		<div id="spoiler" style="display:none" align="center">		
+		<img src="images/lcm/tip.png" style="border:solid; border-width:1px; border-color:limegreen;" width="600px" alt="A screenshot of Little Clone Magnus in the Microsoft Word environment, with a blank document in the background. It is displaying the following message: Tip of the day: You can hurt yourself if you run with scissors."/>
+		<br/><i>Like all Office assistants, Little Clone Magnus will provide you with useful tips every time you start the program.</i>
+		<br/>
+		
+		<br/><img src="images/lcm/expensereport.png" style="border:solid; border-width:1px; border-color:limegreen;" width="600px" alt="A screenshot of Little Clone Magnus in the Microsoft Word environment, with a document saying Employee Travel Expense Report in the background. The virtual assistant is displaying the following message, with the word see in bold: Hello, Rosie! I see you are working on an expense report. Can I help?"/>
+		<br/><i>Little Clone Magnus can tell what you are working on, to offer help tailored to your exact needs.</i>
+		<br/>
+		
+		<br/><img src="images/lcm/seemore.png" style="border:solid; border-width:1px; border-color:limegreen;" width="600px" alt="A screenshot of Little Clone Magnus in the Microsoft Word environment, with a blank document in the background. The virtual assistant is displaying the prompt, What would you like to do? The available answers are Save a document, Gather the trauma of the unsuspecting public, and See more (with the word see in italics)."/>
+		<br/><i>Designed for people who work in close proximity to the paranormal, Little Clone Magnus comes with many additional functions you may find useful.</i>
+		
+		</div>
+		
+<p align="center"><b>Click to <a href="#spoiler" title="Screenshots of Little Clone Magnus in Microsoft Word 96." onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">hide/display</a> screenshots</b> of Little Clone Magnus in action in Microsoft Word 96!</a></p>
+
+		<p align="center">[<a href="downloads/lcm_autorun.exe" target="_blank">Download <b>Little Clone Magnus</b></a>]<b>*</b>
+		<br/><b>*</b> <i>Installation may result in a deluge of goo from the disk drive. This is normal and no cause for alarm.</i><!--Link broken on purpose--></p>
+
+<hr style="border-bottom: dotted 2px; border-top:none; color:green;" />
 		
 	<h2>Games</h2>
 	
 	<ul>
-		<li><a href="downloads/crosswords.zip">Cryptic Crosswords</a>
+		<li><a href="downloads/crosswords.zip" target="_blank">Cryptic Crosswords</a></li> <!--broken on purpose-->
+		<li>[Under Construction]</li>
 	</ul>
-	
-	
 
+<hr style="border-bottom: dotted 2px; border-top:none; color:green;" />
+	
 	<h2>Wallpapers</h2>
-		<p>[small size previews (this is the web of the 90s. no big images) and a nice little .zip]</p>
+		<p align="center">
+		<img src="images/wallpapers/wallpaper_0.png" style="border:solid; border-width:1px; border-color:limegreen;" width="120px" alt="A close-up view of a bookshelf, with the official logo of the Magnus Institute superimposed on top of the picture, right in the middle."/> 
+		<img src="images/wallpapers/wallpaper_1.png" style="border:solid; border-width:1px; border-color:limegreen;" width="120px" alt="The same close-up view of a bookshelf, with a small Magnus Institute logo in the bottom right corner of the picture."/> 
+		<img src="images/wallpapers/wallpaper_2.png" style="border:solid; border-width:1px; border-color:limegreen;" width="120px" alt="An abstract picture imitating the texture of water in green and black colours, with the official logo of the Magnus Institute superimposed on top of the picture, right in the middle."/> 
+		<img src="images/wallpapers/wallpaper_3.png" style="border:solid; border-width:1px; border-color:limegreen;" width="120px" alt="The same abstract picture imitating the texture of water in green and black colours, with a small Magnus Institute logo in the bottom left corner of the picture."/> 
+		<img src="images/wallpapers/wallpaper_4.png" style="border:solid; border-width:1px; border-color:limegreen;" width="120px" alt="An abstract picture imitating the texture of paint in green and black colours, with the official logo of the Magnus Institute superimposed on top of the picture, right in the middle."/> 
+		<img src="images/wallpapers/wallpaper_5.png" style="border:solid; border-width:1px; border-color:limegreen;" width="120px" alt="The same abstract picture imitating the texture of paint in green and black colours, with a small Magnus Institute logo in the bottom left corner of the picture."/>
+		<br/>Download all wallpapers <a href="images/wallpapers/wallpapers.zip">here</a>!
+		</p>
 		
 	
 <!-- no seriously, we can see you, stop that! -->
@@ -60,10 +158,8 @@
 	<p>~~~~~~~~~~~~~~</p> <!-- 14 tildes -->
 	<p>The Magnus Institute © 1996</p>
 	<hr/>
-	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/">Rusty Quill, Ltd</a>.
-
+	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/"  target="_blank">Rusty Quill, Ltd</a>.
 	<br/><a href="credits.html">Link to credits page</a> | <a href="datapolicy.html">Data Collection Policy</a></div>
-
 <!-- spiders be gone -->
 </footer>
 

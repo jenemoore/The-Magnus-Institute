@@ -5,14 +5,64 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
-	<title>The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
+	<title>Webring — The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
 	
 	<link rel="StyleSheet" type="text/css" href="magnusinstitute.css">
 </head>
 
+<!--Cursor script -- use big owl in index page, mini owl in other pages-->
+<script type="text/javascript">
+/*
+Simple Image Trail script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact
+*/
+var trailimage=["images/cursor/miniowlcursor.gif", 40, 40] //image path, plus width and height
+var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+if (document.getElementById || document.all)
+document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function hidetrail(){
+gettrailobj().visibility="hidden"
+document.onmousemove=""
+}
+function followmouse(e){
+var xcoord=offsetfrommouse[0]
+var ycoord=offsetfrommouse[1]
+if (typeof e != "undefined"){
+xcoord+=e.pageX
+ycoord+=e.pageY
+}
+else if (typeof window.event !="undefined"){
+xcoord+=truebody().scrollLeft+event.clientX
+ycoord+=truebody().scrollTop+event.clientY
+}
+var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+gettrailobj().display="none"
+else 
+gettrailobj().display=""
+gettrailobj().left=xcoord+"px"
+gettrailobj().top=ycoord+"px"
+}
+document.onmousemove=followmouse
+if (displayduration>0)
+setTimeout("hidetrail()", displayduration*1000)
+</script>
+
 <body>
 	<div class="navigation">
-	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic resources</a> | <a href="downloads.html">Downloads</a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html"><b>Webring</b></a> || <a href="book.html">Guest Book</a> | <a href="contact.html">Contact</a></div>
+	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic Resources</a> | <a href="downloads.html">Downloads</a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html"><b>Webring</b></a> || <a href="book.html">Guest Book</a> | <a href="contact.html">Contact</a></div>
 	<hr/>
 <!-- web not wanted -->
 
@@ -20,29 +70,27 @@
 	
 	<h2>International Branches of the Magnus Institute</h2>
 		
-
 		<table width="100%"  style="table-layout:fixed">
-
 		<tr>
-			<td>
+			<td style="padding-right:15px; vertical-align:top;">
 				<h3>China</h3>
-					<p align=center>IMG</p>
+					<center>
+					<p><img src="images/chinabranch.jpg" alt="Photo of an official-looking building in a busy Chinese street." width="380px"/></p>
 					<ul>
-
 						<li><b>Current Head:</b> Peng Wei</li>
-
-						<li><a href="">Website</a></li>
+						<li><a href="michina.html" target="_blank">Website</a></li>
 					</ul>
+					</center>
 			</td>
-			<td>		
+			<td style="padding-left:15px; vertical-align:top;">
 				<h3>United States</h3>
-					<p align="center">IMG</p>
+					<center>
+					<p><img src="images/usbranch.jpg" alt="Photo of an official-looking building with tall windows; all around the building, the ground is paved with grey stone." height="300px"/></p>
 					<ul>
-
 						<li><b>Current Head:</b> Brock Winstead</li>
-
-						<li><a href="">Website</a></li>
+						<li><a href="miunitedstates.html" target="_blank">Website</a></li>
 					</ul>
+					</center>
 			</td>
 		</tr>	
 		</table>
@@ -51,38 +99,106 @@
 	<br/>
 	<h2>Research Partners</h2>
 	
-
-		<table width="100%" style="table-layout:fixed">
+		<table width="100%" cellpadding="10px" style="table-layout:fixed">
 		<tr>
-			<td>		
-				<h3>Maeltopia</h3>
-				<p align="center">[Insert description referencing Maeltopia but pretend it's a publishing company or something]</p>
+			<td style="padding-right:15px; vertical-align:top;">		
+				<h3>Maeltopia Publishing House</h3>
+				<p align="center">The Maeltopia Publishing House has been a valued research partner of The Magnus Institute since its founding in 1972.  As part of our organisation’s ongoing efforts to document and study any and all texts of an esoteric nature, the publisher has proved invaluable in identifying and securing the rights to several unique texts and subsequently sharing with us those which are not deemed suitable for broader publication.</p>
+				<p align="center"><i>For more information about the Maeltopia Publishing House, click <a href="maeltopiaredirect.html">here</a>.</i></p>
 			</td>
-			<td>
+			<td style="padding-left:15px; vertical-align:top;">
 				<h3>The Cryptid Cases</h3>
-				<p align="center">[Insert description referencing the podcast but pretend "the Cryptid Cases" is a Serious Magazine]</p>
+				<p align="center">Our newest affiliate is the highly respected academic journal <i>The Cryptid Cases</i>. While the majority of their dissertations and research papers are focused on occurrences and apparitions in North America, several of our own researchers have had work printed in the esteemed publication.</p>
+				<p align="center"><i>For more information about </i>The Cryptid Cases<i>, click <a href="cryptidredirect.html">here</a>.</i></p>
 			</td>
 		</tr>
 		</table>
 	
-
 	
 	<br/>
 	<h2>Scholarships & Initiatives</h2>
 	
-
 		<table width="100%" style="table-layout:fixed">
 		<tr>
-			<td>
-				<h3>[Insert fake scholarship #1]</h3>
-				<p align="center">[For Lydia Nicholas: fake scholarship tailored to the sort of anthropology/technology work she does (perhaps with also RQG refs)]</p>
+			<td style="padding-right:15px">
+				<h3>Nicholas Scholarship</h3>
+				
+				<p>The Magnus Institute is excited to partner with the <b>Nicholas Scholarship Fund</b>, an organisation celebrating and promoting further education among those coming from disadvantaged backgrounds.</p>
+
+				<p>The Nicholas Scholarship was established in the 19th Century by an anonymous benefactor in Paris, who wished for education to be freely available for all, especially those living in concentrated areas of high poverty.</p>	
+
+				<p>Those who hold the Nicholas Scholarship will also be <b>required to undertake a 12-month internship with The Magnus Institute as part of an industrial placement year</b>. Interns will choose three four-month rotations from the following departments: Accounting, the Archives, Artifact Storage, HR, Legal, Research. Additionally, if the scholar is awarded a degree with a suitably high classification, scholars may automatically receive an offer of a graduate position at the Institute.</p>
+
+				<p><b>To qualify, you must:</b></p>
+				<ul>
+				<li>be eligible for study at (and ideally hold either a conditional or unconditional offer for) any of the Nicholas Scholarship Fund’s international partners<b>*</b>:
+					<ul><li>University College London (UK)</li>
+					<li>Paris-Sorbonne University (France)</li>
+					<li>Charles University in Prague (Czech Republic)</li>
+					<li>Cairo University (Egypt)</li>
+					<li>University of Damascus (Syria)</li></ul>
+				<li>be applying to study at <b>undergraduate level</b>, and not already hold a degree</li>
+				<li>be able to present <b>economically disadvantaged circumstances</b>, subject to the criteria on our own website</li>
+				<li>be willing to undertake an industrial placement at The Magnus Institute between your second and third years of study, during which you will hold the title of Archival Intern</li>
+				</ul>
+
+				<p>The ideal candidate will also:</p>
+				<ul>
+				<li>be <b>quick-witted</b>, and able to navigate dynamic situations with ease</li>
+				<li>have <b>strong listening abilities</b>, and an understanding of when it is most appropriate to stay in the background or to stand out from the crowd</li>
+				<li>be ambitious, and ready to climb to the top of any organisation that takes their interest</li>
+				<li>have a keen interest in, knowledge of, or be willing to undertake further study in <b>one or more of the following subject areas</b>:</li>
+					<ul><li>French Gothic architecture and its role in communication of socio-cultural information, especially in religious contexts</li>
+					<li>the biomechanics of the human body, with a particular interest and/or willingness to undertake experimentation as to the functionality of essential systems under physical pressure (both as a researcher and as a subject)</li>
+					<li>performance sports, including but not limited to acrobatics such as acrobatics, knife throwing, illusory performances (e.g. escape artistry and other sleight-of-hand techniques), or armed martial arts</li>
+					<li>language learning, including modern languages, ancient languages, and/or sign language</li>
+					<li>teaching and/or early years education</li></ul>
+				<li>have <b>excellent fine motor skills</b>, which the candidate will be able to demonstrate - this may be through building or dismantling complex mechanisms on a fine scale, for example</li>
+				</ul>
+
+<p><i><b>*</b> Unfortunately, the Nicholas Scholarship is no longer awardable to prospective students of Sapienza University of Rome, Italy or Shoin University, Japan. We apologise for the inconvenience.</i></p>
+
+			<p>If your application is successful, the Nicholas Scholarship will fund:<p>
+			<ul>
+				<li><b>all course participation costs</b>, including tuition fees, library and laboratory costs, necessary insurance coverage, field trips, and all other mandatory costs related to course participation</li>
+				<li><b>a maintenance grant</b>, intended to cover the costs of living and travel expenses for the duration of the study programme (please note: the exact size of the maintenance grant will depend on your city and institution of study)</li>
+				<li>if required, <b>a disability allowance</b>, which will cover the costs of any specialist equipment, services, travel, or necessary study adjustments needed for disabled scholars, subject to a needs assessment</li>
+			</ul>
+			
+				<p><i>To request more information about the Nicholas Scholarship programme or download an application form, click <a href="lnicholas.html" target="_blank">here</a>.</i></p>
 			</td>
-			<td>		
+			
+			<td style="padding-left:15px; vertical-align:top">
 				<h3>Tangerine Scholarship</h3>
-				<p align="center">For totes profesh Yorkshire lads who make music</p>
+			
+				<p>The Tangerine Scholarship Foundation is honored to announce its inaugural round of funding for those interested in learning to become auditory artists. Auditory artistry can range from music composition to vocal editing, and anything else that artists have the audacity to explore.</p>
+
+				<p>The Foundation was originally created by benefactors Viola and Burt ‘Beeps’ Marc. Viola Marc, born Viola Fuffo, was the heiress to the Fuffo Confection Company fortune, the company that popularised jelly bean candy throughout the United Kingdom. (Please see <i>Growth and Development of the Gelata Faba</i> by Carlton Butterbaum<b>*</b> for additional jelly bean history and lore). Not to be outdone, Burt ‘Beeps’ Marc brought his own money to the family as a world-renowned athlete in the marble circuit.</p>
+
+				<p>Mr. and Mrs. Marc frequently talked of dreams where they would be able to inspire the next generation of auditory artists. The Marcs solidified their plans one fateful evening, huddled next to their old, rusty fridge whilst eating tangerines. Hence, the name and mission of the Tangerine Scholarship Foundation was born into the world.</p>
+
+				<p>The Tangerine Scholarship is open to Yorkshire applicants only. For application purposes, Yorkshire is merely a state of mind and applicants are welcome from all three time zones. If you are wondering if you are in the Yorkshire state of mind, simply ask yourself, ‘Ey up?’</p>
+
+				<p>Whilst the Foundation welcomes applications from lads and blokes (of all genders), special consideration is given to those who can demonstrate of a history of any or all of the following actions and beliefs:</p>
+				
+				<ul>
+					<li><i>Redistribution of wealth</i> — applicants who have directly participated in the theft and redistribution of items including but not limited to houses, vehicles, and internal organs will receive priority consideration</li>
+					<li><i>Staunch support of language purity measure</i> — no foul language, including but not limited to “h words,” is permitted in application materials and applicants who espouse a disdain for such low-brow language will receive favorable consideration</li>
+					<li><i>Ability to convey attitude with a single pictogram</i> — auditory artists in particular should not be limited to the confines of traditional English language and as such, applicants who can, for instance, display a sense of smugness and zero remorse through the use of, hypothetically, a single small image of a laughing dog, will receive extra consideration</li>
+				</ul>
+
+				<p>Scholarship winners will be funded for an entire year of hands-on learning experiences. Course topics will include removing breaths and mouth sounds, creating hype crimes, and distributing a seemingly neverending supply of images in which their face has been placed over that of a more famous person.</p>
+
+				<i><p>If you would like to apply to the Tangerine Scholarship Foundation, please send your name, favorite jelly bean flavor (mint apologists need not apply), and a VHS with your best Sean Bean impression to:</p>
+				
+				<p align="center">Tangerine Scholarship Fund
+				<br/>PO Box 42069
+				<br/>Wigan
+				<br/>WN1 1BS</span></p></i>
+
+				<p><b>*The sole copy of <i>Growth and Development of the Gelata Faba</i> by Carlton Butterbaum is securely located at The Magnus Institute, London. Please do not contact them for details on reading the book. All inquiries will be denied.</b></p>
 			</td>
 		</tr>
-
 		</table>
 	
 <!-- no seriously, we can see you, stop that! -->
@@ -92,10 +208,8 @@
 	<p>~~~~~~~~~~~~~~</p> <!-- 14 tildes -->
 	<p>The Magnus Institute © 1996</p>
 	<hr/>
-	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/">Rusty Quill, Ltd</a>.
-
+	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/" target="_blank">Rusty Quill, Ltd</a>.
 	<br/><a href="credits.html">Link to credits page</a> | <a href="datapolicy.html">Data Collection Policy</a></div>
-
 <!-- spiders be gone -->
 </footer>
 

@@ -5,48 +5,241 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
-	<title>The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
+	<title>404 — The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
 	
 	<link rel="StyleSheet" type="text/css" href="magnusinstitute.css">
-
 	<script language="javascript" type="text/javascript" src="scripts/404.js"></script>
-
 </head>
+
+<!--Cursor script -- use big owl in index page, mini owl in other pages-->
+<script type="text/javascript">
+/*
+Simple Image Trail script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact
+*/
+var trailimage=["images/cursor/miniowlcursor.gif", 40, 40] //image path, plus width and height
+var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+if (document.getElementById || document.all)
+document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function hidetrail(){
+gettrailobj().visibility="hidden"
+document.onmousemove=""
+}
+function followmouse(e){
+var xcoord=offsetfrommouse[0]
+var ycoord=offsetfrommouse[1]
+if (typeof e != "undefined"){
+xcoord+=e.pageX
+ycoord+=e.pageY
+}
+else if (typeof window.event !="undefined"){
+xcoord+=truebody().scrollLeft+event.clientX
+ycoord+=truebody().scrollTop+event.clientY
+}
+var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+gettrailobj().display="none"
+else 
+gettrailobj().display=""
+gettrailobj().left=xcoord+"px"
+gettrailobj().top=ycoord+"px"
+}
+document.onmousemove=followmouse
+if (displayduration>0)
+setTimeout("hidetrail()", displayduration*1000)
+</script>
 
 <body>
 	<div class="navigation">
-	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic resources</a> | <a href="downloads.html">Downloads</a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html">Webring</a> || <a href="book.html">Guest Book</a> | <a href="contact.html">Contact</a></div>
+	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic Resources</a> | <a href="downloads.html">Downloads</a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html">Webring</a> || <a href="book.html">Guest Book</a> | <a href="contact.html">Contact</a></div>
 	<hr/>
 <!-- web not wanted -->
+	
+	<table width="100%" style="table-layout:fixed; padding-top 5px">
+		<tr>
+			<td align="right">
+				<center><img align="right" src="images/404_transparent_left.png" alt="An open eye looking to the right, seen in profile. The eye looks like it's attached to the page by cobwebs." height="100px"/></center>
+			</td>
+		
+			<td width="75%">
+				<h2><u>404 ERROR</u><br/>We couldn't find the page you were looking for.</h2>
+				<p align="center">Don't worry, we're keeping an Eye on the situation.</p>
+			</td>
+			
+			<td>		
+				<center><img align="left" src="images/404_transparent_right.png" alt="An open eye looking to the left, seen in profile. The eye looks like it's attached to the page by cobwebs." height="100px"/></center>
+			</td>
+		<tr>
+		
+	</table>
 
-	<h1>404 ~ TREMBLE IN FEAR ~ 404</h1>
+		<p align="center">[PLACEHOLDER TEXT]</p>
 
-	<h2>The page could not be found.</h2>
-		
-		<p align="center">Don't worry, we're keeping an Eye on the situation.</p>
-		
-		[Insert a visual here]
-		<br/>[Insert progressively creepier Tessa Winters quotes (jj) - Tessa voiced by Fran Bushe]
-		
-		
-		
 	<div id="error1">
-		<p>[Just the Magnus Archives logo S5 by Anika Khan]</p>
+		<center>
+		<p style="font-size:medium">Error message 3</p>
+		</center>
 	</div>
 
 	<div id="error2">
-		<p>[Message referencing Tessa Winters's VA, Fran Bushe]</p>
+		<center>
+		<p style="font-size:medium">[Message referencing Tessa Winters's VA, Fran Bushe]</p>
+		</center>
 	</div>
-
+	
 	<div id="error3">
-		<p>Error message 3</p>
+		<center>
+		<p style="font-size:medium">🕸 a̤͇͗ͣn̥̘ͥ͆i̻̖̒͗k̦̞ͦ̑a̩̗͊̈ ̱̠̓̓k̫̰̇̚h̯̬ͧͪa͙̤͋̐n̥̻ͥ̋.͈̻ͩ́ ̃ h͔̜ͧ͑ǐ̙͚̆ ̰͇̹̝͆̇̉n̰̝ͨ̔i̥̪͂ͪc̱̰̋̔e͖ͫ̊ͅ ̝̺͒ͧa̹͖ͯ̔r̼̙̀͐t̟̩ͯ̐ ::::) 🕸</p>
+		
+		<img src="images/MagnusLogoAnikaKhan.webp" alt="The logo for season 5 of the Magnus Archives. It is a stylised cassette tape made of spiderwebs." height="200px"/>
+		</center>
 	</div>
 
 	<div id="error4">
-		<p>Error message 4</p>
-	</div>		
-		
+		<center>
+		<p style="font-size:medium">Error message 4</p>
+		</center>
+	</div>
 
+	<div id="error5">
+		<center>
+		<p style="font-size:medium">Error message 5</p>
+		</center>
+	</div>	
+		
+	<div id="error6">
+		<center>
+		<p style="font-size:medium">Error message 6</p>
+		</center>
+	</div>
+
+	<div id="error7">
+		<center>
+		<p style="font-size:medium">Error message 7</p>
+		</center>
+	</div>
+
+	<div id="error8">
+		<center>
+		<p style="font-size:medium">Error message 8</p>
+		</center>
+	</div>
+
+	<div id="error9">
+		<center>
+		<p style="font-size:medium">Error message 9</p>
+		</center>
+	</div>
+
+	<div id="error10">
+		<center>
+		<p style="font-size:medium">Error message 10</p>
+		</center>
+	</div>
+
+	<div id="error11">
+		<center>
+		<p style="font-size:medium">Error message 11</p>
+		</center>
+	</div>
+
+	<div id="error12">
+		<center>
+		<p style="font-size:medium">Error message 12</p>
+		</center>
+	</div>
+	
+	<div id="error13">
+		<center>
+		<p style="font-size:medium">Error message 13</p>
+		</center>
+	</div>
+
+	<div id="error14">
+		<center>
+		<p style="font-size:medium">Error message 14</p>
+		</center>
+	</div>	
+		
+	<div id="error15">
+		<center>
+		<p style="font-size:medium">Error message 15</p>
+		</center>
+	</div>
+
+	<div id="error16">
+		<center>
+		<p style="font-size:medium">Error message 16</p>
+		</center>
+	</div>
+
+	<div id="error17">
+		<center>
+		<p style="font-size:medium">Error message 17</p>
+		</center>
+	</div>
+
+	<div id="error18">
+		<center>
+		<p style="font-size:medium">Error message 18</p>
+		</center>
+	</div>
+
+	<div id="error19">
+		<center>
+		<p style="font-size:medium">Error message 19</p>
+		</center>
+	</div>
+
+	<div id="error20">
+		<center>
+		<p style="font-size:medium">Error message 20</p>
+		</center>
+	</div>
+
+	<div id="error21">
+		<center>
+		<p style="font-size:medium">Error message 21</p>
+		</center>
+	</div>	
+		
+	<div id="error22">
+		<center>
+		<p style="font-size:medium">Error message 22</p>
+		</center>
+	</div>
+
+	<div id="error23">
+		<center>
+		<p style="font-size:medium">Error message 23</p>
+		</center>
+	</div>
+
+	<div id="error24">
+		<center>
+		<p style="font-size:medium">Error message 24</p>
+		</center>
+	</div>
+
+	<div id="error25">
+		<center>
+		<p style="font-size:medium">Error message 25</p>
+		</center>
+	</div>	
+	
+	
 	
 <!-- no seriously, we can see you, stop that! -->
 </body>
@@ -55,10 +248,8 @@
 	<p>~~~~~~~~~~~~~~</p> <!-- 14 tildes -->
 	<p>The Magnus Institute © 1996</p>
 	<hr/>
-	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/">Rusty Quill, Ltd</a>.
-
+	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/" target="_blank">Rusty Quill, Ltd</a>.
 	<br/><a href="credits.html">Link to credits page</a> | <a href="datapolicy.html">Data Collection Policy</a></div>
-
 <!-- spiders be gone -->
 </footer>
 

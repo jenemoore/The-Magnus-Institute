@@ -5,14 +5,64 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
-	<title>The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
+	<title>Guest Book — The Official Website of The Magnus Institute</title> <!-- spiders do not crawl here -->
 	
 	<link rel="StyleSheet" type="text/css" href="magnusinstitute.css">
 </head>
 
+<!--Cursor script -- use big owl in index page, mini owl in other pages-->
+<script type="text/javascript">
+/*
+Simple Image Trail script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact
+*/
+var trailimage=["images/cursor/miniowlcursor.gif", 40, 40] //image path, plus width and height
+var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+if (document.getElementById || document.all)
+document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function hidetrail(){
+gettrailobj().visibility="hidden"
+document.onmousemove=""
+}
+function followmouse(e){
+var xcoord=offsetfrommouse[0]
+var ycoord=offsetfrommouse[1]
+if (typeof e != "undefined"){
+xcoord+=e.pageX
+ycoord+=e.pageY
+}
+else if (typeof window.event !="undefined"){
+xcoord+=truebody().scrollLeft+event.clientX
+ycoord+=truebody().scrollTop+event.clientY
+}
+var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+gettrailobj().display="none"
+else 
+gettrailobj().display=""
+gettrailobj().left=xcoord+"px"
+gettrailobj().top=ycoord+"px"
+}
+document.onmousemove=followmouse
+if (displayduration>0)
+setTimeout("hidetrail()", displayduration*1000)
+</script>
+
 <body>
 	<div class="navigation">
-	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic resources</a> | <a href="downloads.html">Downloads</a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html">Webring</a> || <a href="book.html"><b>Guest Book</b></a> | <a href="contact.html">Contact</a></div>
+	<a href="index.html">Index</a> || <a href="news.html">News & Recent Events</a> || <a href="resources.html">Academic Resources</a> | <a href="downloads.html">Downloads</a> | <a href="statement.html">Online Statement Form</a> | <a href="forums.html">Forums</a> || <a href="about.html">About the Magnus Institute</a> | <a href="staff.html">Staff</a> | <a href="thankyou.html">Our Generous Donors</a> | <a href="webring.html">Webring</a> || <a href="book.html"><b>Guest Book</b></a> | <a href="contact.html">Contact</a></div>
 	<hr/>
 <!-- web not wanted -->
 
@@ -24,26 +74,223 @@
 	
 	<p><i>Please note that this is a virtual public guest book for the Magnus Institute. All statements related to your personal encounters with the supernatural should be entered in the form available on <a href="statement.html">this page</a>. All messages intended to be private communication (regarding e.g. research, funding applications, or technical issues) should be submitted via our <a href="contact.html">contact form</a>.</i></p>
 		
-	<form action="/handlingform" id="statementform">
-		<label for="fname"><b>First name:</b></label> <input type="text" id="fname" name="fname" required>
-
-		| <label for="fname"><b>Last name:</b></label> <input type="text" id="lname" name="lname" required>
+	<form action="/handlingform" id="guestbookform">
+		<label for="fname"><b>Name:</b></label> <input type="text" id="name" name="name" required>
 		| <label for="email"><b>E-mail address:</b></label> <input type="email" id="email" name="email">
-
 		<br/>
 		<br/>
 		
 		<textarea name="testimonial" rows="10" cols="100" required>Type your message here...</textarea>
 		<br/>
 		
-		<input type="submit" value="Submit">
+		<input type="submit" value="Submit" title="Sorry! Broke this one too. ::::) Try again later!">
 	</form>
-	
+		
+
 	<h2>Past Visitor Messages</h2>
 	
-	[syntax and appearance TBD]
+<!--
 
-	[This is where the fake Alex application for funding for Rusty Quill should go -- “something that from the description would be recognisable as funding from Rusty Quill” / “needs money for new duvets after the old ones got covered in asbestos, and a new disco bulb after the cat got it” / “funds for starting up a company to produce cosmic horror and foot-based scifi improv comedy, with special focus on including as many people named Sasha and Mike as possible, and people who can write very useful stage directions like "It's all a bit much."”]
+<hr/>
+<p><i>From <b>NAME</b> on <b>DD/MM/1996 HH:MMXX</b>
+<br/>Subject: <b>SUBJECT</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph</div>
+
+-->
+
+	
+<p><i>From <b>cofy'</b> on <b>28/09/1996 1:14AM</b>
+<br/>Subject: <b>Please Consider Replacing Your Vending Machines</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">I went there to give a statement (yeah I know, but I couldn't really tell anyone else) and tried to get coffee from one of the vending machines on my way out, but it must have needed replaced because all it did was give me bones (?!) in my plastic cup?! Is that just for the public vending machines?! I don't know what's happening there but I'm not sure that's compliant with food guidelines!! What if it's mice that died in there!!!! Please do something!!!
+<br/>Also, that's neither here nor there but I keep having weird dreams about the lady who took my statement. I'm sure it's not her fault and she seems very competent but I already have insomnia and I really didn't need that :/</div>
+
+
+<hr/>
+<p><i>From <b>xXxMrDogDudexXx</b> on <b>15/07/1996 10:58AM</b>
+<br/>Subject: <b>(no subject)</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">Have you seen that old bat what works in the archives? Lady looks like a stiff breeze could take her out</div>
+
+
+<hr/>
+<p><i>From <b>spookymcgee565</b> on <b>13/07/1996 7:26PM</b>
+<br/>Subject: <b>:(</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">well **** that didnt go thru im not retyping everything. too bad xoxo</div>
+
+
+<hr/>
+<p><i>From <b>spookymcgee565</b> on <b>13/07/1996 7:21PM</b>
+<br/>Subject: <b>(no subject)</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">Type your message here...</div>
+
+
+
+<hr/>
+
+<p><i>From <b>A. J. Schnookums</b> on <b>10/06/1996 04:20AM</b>
+<br/>Subject: <b>Grant Application</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">Hello everyone! I’d just like to take this opportunity to apply for some funds.</div>
+
+<div class="guestbook"><b><u>Name of Endeavour</u></b>
+<br/>Corroded Reed (we're still working on the name)</div>
+
+<div class="guestbook"><b><u>Outline</u></b>
+<br/>Long story short: The mission for this upstart company is to produce cosmic horror, soul-crushing Actual Play, foot-based sci-fi improv comedy and stuff like that, in the form of mahoosively addictive audio drama, with special focus on including as many people named Sasha and Mike as possible. I can say now: there will be no kissing noises whatsoever.</div>
+
+<div class="guestbook"><b><u>Cost Breakdown:</u></b>
+<ul>
+	<li>necessary basic recording equipment including, but not limited to
+		<ul>
+			<li>extensive breath library</li>
+			<li>disco ball</li>
+			<li>rustling fabric</li>
+			<li>boxed set of extended rule books for Pathfinder with cross reference guide (volumes 1-11)</li>
+			<li>summer duvet, winter duvet</li>
+			<li>weekly supply of melons</li>
+			<li>cat food</li>
+			<li>dice</li>
+			<li>a bone to throw someone</li>
+			<li>Victoria sponge cake (1)</li>
+			<li>cloak for CEO </li>
+		</ul>
+	</li>
+	<li>premises in central London
+		<ul>
+			<li>must include at least one tower</li>
+			<li>must include at least one doorbell</li>
+			<li>must include padded basement/dungeon</li>
+		</ul>
+	</li>
+	<li>staff
+		<ul>
+			<li>Head of Video</li>
+			<li>CEO</li>
+			<li>COO</li>
+			<li>CTO</li>
+			<li>nightmare merchant (part-time)</li>
+			<li>writer (preferably with family members or old band members we can utilise)</li>
+			<li>at least one VA with a wide enough variety of voices that we can use them in all our productions (someone who has a younger sibling they can rope in is also an option)</li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+<div class="guestbook"><b><u>Goals and Objectives</u></b>
+<br/>
+<br/>
+<b>Goal</b>: Basically: Decrease the ratio of lower-quality to goooooooood audio content available. The current situation is an obvious travesty; a direct consequence of every late-twenties man in a vaguely urban area picking up a microphone and pouring his thoughts out into the ether. <i>Anyway</i>: We at Corroded Reed believe that the audience deserves better, and that we can in fact literally ruin listeners for all other ... <strike>should probably cut this bit for length?</strike>
+<br/>
+<br/>
+<strong>Objective</strong>: Provide listeners with the initial season of our Actual Play series, which will <strike>hook listeners through subliminal manipulation</strike> raise awareness of the issues with audio quality currently available. In real terms: This will create a demand for further quality content. A couple of things that will be baked in as strategies for increased listenership:
+
+<ul>
+	<li>“Gaming and Giving”, a fundraiser handled by our Head of Video</li>
+	<li>The Unknowing (thwarted)</li>
+	<li><strike>we can’t just put “Profit”  here, can we?</strike></li>
+</ul>
+</div>
+
+<div class="guestbook"><b><u>Plan of evaluation</u></b>
+<br/>Each outreach event will, for various reasons, engage at least 50 community members, and this rate will grow by at least 10 % over the course of Phase One. Linked spreadsheets with underlying data available on request; what it comes down to is this:
+<br/>
+<img src="images/corrodedgraph1.jpeg" alt="A line graph representing the number of engaged community members over time from 1996 to 2000. It steadily increases over time, going from about 10 community members in 1996 to 350 in 2000."/>
+<br/>
+<br/>
+The rate of paying listeners will increase by approximately ? % by the time of completion of Phase One, as measured by registered donors/monthly listens. Multiple linked spreadsheets available on demand. I’ll give you this graph for free:
+<br/>
+<img src="images/corrodedgraph2.jpeg" alt="A line graph with two lines. One line represents the projected number of registered patrons from 1996 to 2001. It increases slowly over time, going from 0 in 1996 to roughly 750 in 2001. The other line represents the projected number of monthly downloads. It increases slowly at first, going from 0 in 1996 to 2000 in 1999, at which point it starts increasing faster to reach 6000 in 2001."/>
+<br/>
+<br/>
+Weekly faffing-around meetings between CEO, Producer, and Head of Video, and daily meetings between CEO and COO, will ensure running evaluation of progress.</div>
+
+<div class="guestbook">Circling back around: We are exceptionally grateful to have the opportunity to apply for a grant from your esteemed institute, and look very much forward to be doing business with you. You may be monsters, but we respect your craft!</div>
+
+<div class="guestbook"><i>~ A. J. Schnookums</i></div>
+
+
+<hr/>
+<p><i>From <b>B. Clare</b> on <b>05/06/1996 12:05PM</b>
+<br/>Subject: <b>oops</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">Nice website, you guys seem super weird though - I was looking for the Marcus Institute, my mistake</div>
+
+
+<hr/>
+<p><i>From <b>Rosalin Gray</b> on <b>08/05/1996 8:51PM</b>
+<br/>Subject: <b>Gratitude</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">Seeing as I have now reached the end of my thesis work on the psychology of terror, I would like to extend my most heartfelt thanks to your institute for all the support, thought-provoking discussions, and wide range of research material that you have made available to me over the past years. I know mister Wright would hear none of it but truly, I am in your debt for all you have helped me through.</div>
+
+<div class="guestbook">After that bother in Scandinavia halfway through my second draft I genuinely thought all hope was lost; but then there you were, like a godsend (although I’m sure debates could be had regarding which god, of course… you know what I mean, I hope). I could not be more happy with our partnership and who knows, maybe I shall throw my hat in the ring the next time you advertise an open position? There is ever more knowledge to chase, and I believe your institute have a near uncanny way with it. Fear not, though, of course I intend to pad the old CV a bit first, but I doubt you have heard the last of me!</div>
+
+<div class="guestbook">Many thanks again.
+<br/>R. Gray
+</div>
+
+
+<hr/>
+<p><i>From <b>coastal-dreamer103</b> on <b>19/04/1996 6:09PM</b>
+<br/>Subject: <b>Are you kidding me?!</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">So apparently it's a different boss guy now but I passed him on the street in front of the Institute (long story short I applied for work nearby after that interview didn't pan out) and it's a different guy but the exact same creeps? That's so freaky I'm never going there again</div>
+
+
+
+<hr/>
+<p><i>From <b>frisky</b> on <b>13/04/1996 4:13PM</b>
+<br/>Subject: <b>::::)</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">🕸 oooooooo 🕸</div>
+
+
+
+<hr/>
+<p><i>From <b>coastal-dreamer103</b> on <b>07/02/1996 5:32PM</b>
+<br/>Subject: <b>Wouldn't recommend</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">I interviewed for a job here once, but that boss guy gave me the absolute creeps and I made some piss poor excuse to get out of there before those freaky eyes could freeze me in place</div>
+
+
+<hr/>
+<p><i>From <b>Ben Dover</b> on <b>23/01/1996 11:34AM</b>
+<br/>Subject: <b>****</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">Hey, I know you know it was me, there is no need to keep this up here, honestly what sort of webforum lacks the option to delete one’s post? Leave me alone!</div>
+
+
+<hr/>
+<p><i>From <b>Ben Dover</b> on <b>23/01/1996 11:24AM</b>
+<br/>Subject: <b>;-P</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">Just realised this guestbook doesn’t require any kind of identity verification to post, sick. LOL</div>
+
+
+<hr/>
+<p><i>From <b>ADMIN</b> on <b>01/01/1996 3:33PM</b>
+<br/>Subject: <b>Guest Book Annual Purge</b></i>
+<br/>---------------</p>
+
+<div class="guestbook">The annual purge of our Guest Book page is complete.
+<br/>Here's to another year of wonderful comments from our visitors!</div>
+
 
 	
 <!-- no seriously, we can see you, stop that! -->
@@ -53,10 +300,8 @@
 	<p>~~~~~~~~~~~~~~</p> <!-- 14 tildes -->
 	<p>The Magnus Institute © 1996</p>
 	<hr/>
-	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/">Rusty Quill, Ltd</a>.
-
+	<div class="disclaimer">This collaborative fansite based on the podcast The Magnus Archives is neither affiliated with nor endorsed by <a href="https://rustyquill.com/" target="_blank">Rusty Quill, Ltd</a>.
 	<br/><a href="credits.html">Link to credits page</a> | <a href="datapolicy.html">Data Collection Policy</a></div>
-
 <!-- spiders be gone -->
 </footer>
 
