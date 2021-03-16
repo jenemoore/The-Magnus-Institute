@@ -29,6 +29,8 @@ a
 a[target="_blank"]:after
 {content: " " url(images/cliparts/external.png);}
 
+ul
+{list-style-position: inside;} /*Should fix the "bullets point all the way to the left in some browsers" thing*/
 
 footer
 {color:green;
@@ -67,6 +69,9 @@ padding-left:5px;}
 {text-align:left;
 margin-top: 1em;
 margin-bottom: 1em;}
+
+.clink /*for credit links*/
+{color:#007f66;}
 
 
 /*Styles for JavaScript fun stuff*/
