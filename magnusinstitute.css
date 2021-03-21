@@ -30,7 +30,7 @@ a[target="_blank"]:after
 {content: " " url(images/cliparts/external.png);}
 
 /*ul
-{list-style-position: inside;} /*Fixed the "bullets point all the way to the left in some browsers" thing but looks less readable. Find another workaround*/
+{list-style-position: inside;} /*Fixed the "bullets point all the way to the left on centred lists in some browsers" thing but is less readable overall, so no. Find another workaround -- for now avoiding centred lists*/
 
 footer
 {color:green;
