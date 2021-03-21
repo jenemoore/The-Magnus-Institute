@@ -29,8 +29,8 @@ a
 a[target="_blank"]:after
 {content: " " url(images/cliparts/external.png);}
 
-ul
-{list-style-position: inside;} /*Should fix the "bullets point all the way to the left in some browsers" thing*/
+/*ul
+{list-style-position: inside;} /*Fixed the "bullets point all the way to the left in some browsers" thing but looks less readable. Find another workaround*/
 
 footer
 {color:green;
@@ -72,6 +72,19 @@ margin-bottom: 1em;}
 
 .clink /*for credit links*/
 {color:#007f66;}
+
+.newswidth /*optimise mobile display on news page*/
+{min-width:550px;}
+.resourcewidth /*optimise mobile display on resources page*/
+{min-width:700px;}
+.staffwidth /*optimise mobile display on staff page*/
+{min-width:600px;}
+.donorswidth /*optimise mobile display on donors page*/
+{min-width:900px;}
+.webringwidth /*optimise mobile display on webring page*/
+{min-width:600px;}
+.creditswidth /*optimise mobile display on credits page*/
+{min-width:500px;}
 
 
 /*Styles for JavaScript fun stuff*/
