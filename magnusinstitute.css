@@ -48,6 +48,10 @@ text-align:center;}
 {color:black;
 font-size:x-small;}
 
+.creddisclaimer /*used for the disclaimer in the footer of the credits*/
+{color:black;
+font-style:bold;}
+
 .rosie /*used in span everywhere Rosie's name is!!*/
 {color:#e45c8b;}
 
